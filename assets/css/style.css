@@ -1,0 +1,73 @@
+.color-yellow {
+    color: yellow;
+}
+
+::placeholder {
+    color: black;
+    /* font-size: 0.75rem; */
+    vertical-align: middle;
+}
+
+.bg-blue {
+    background-color: rgb(27, 114, 232);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    background-color: rgb(229, 229, 229);
+}
+
+
+.debug {
+    border: 2px solid red;
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: black;
+}
+
+.head-nav {
+    height: 3rem;
+    flex-wrap: wrap;
+}
+
+
+
+.bar-search {
+    flex-grow: 1;
+}
+
+.logos,
+.bell {
+    width: 2rem;
+    height: 2rem;
+}
+
+.logos img,
+.bell img {
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    .logos,
+    .bell {
+        width: 6rem;
+        height: 2rem;
+    }
+
+}
