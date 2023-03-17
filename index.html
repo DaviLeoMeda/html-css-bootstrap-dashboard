@@ -52,77 +52,26 @@
             </div>
         </div>
 
-        <!-- <div>
-            <div class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand d-lg-none container-fluid"><img class="img-fluid"
-                            src="./assets/img/mobile-logo.png" alt=""></a>
-                    <a class="navbar-brand d-none d-lg-block"><img src="./assets/img/logo.svg" alt=""></a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-
-        </div> -->
-
-        <!-- <div class="container-fluid">
-
-            <div class="row align-items-center justify-content-between">
-
-                <div class="col-2 col-md-1 d-lg-none">
-                    <img class="img-fluid" src="./assets/img/mobile-logo.png" alt="">
-                </div>
-
-                <div class="col-1 d-none d-lg-block">
-                    <img class="img-fluid" src="./assets/img/logo.svg" alt="">
-                </div>
-
-                <div class="navbar col-8 col-md-9">
-                    <div class="container-fluid">
-                        <input class="nav-bar form-control" type="search"
-                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                    </div>
-                </div>
-
-                <div class="d-flex col-1">
-
-                    <div class="d-none d-lg-block d-flex">
-                        <i class="fa-solid fa-list mx-0.5"></i>
-                        <i class="fa-solid fa-circle-question mx-0.5"></i>
-                        <i class="fa-solid fa-ellipsis-vertical mx-0.5"></i>
-                    </div>
-
-                    <div class="mx-1">
-                        <a href="#"><i class="fa-solid fa-bell color-yellow"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div> -->
-
 
     </header>
 
-    <main class="container-fluid h-100">
+    <main class="h-100 d-flex">
 
-        <div class="row h-100">
+        <div class="row h-100 nopadding w-100 overflow-hidden">
 
-            <nav class="col-1 col-lg-2 d-flex flex-column justify-content-between align-content-center">
+            <nav class="col-1 col-lg-2 d-flex flex-column justify-content-between align-content-center flex-wrap">
 
                 <div class="d-lg-none text-white d-flex flex-column mt-2">
-                    <i class="fa-solid fa-house my-2"></i>
-                    <i class="fa-solid fa-chart-simple my-2"></i>
-                    <i class="fa-solid fa-signal my-2"></i>
+                    <i class="fa-solid fa-house hover my-2"></i>
+                    <i class="fa-solid fa-chart-simple hover my-2"></i>
+                    <i class="fa-solid fa-signal hover my-2"></i>
                 </div>
 
                 <div class="text-white d-none d-lg-block d-flex flex-column mt-2">
-                    <div><i class="fa-solid fa-house my-2"></i><span class="mx-1">Home</span></div>
-                    <div><i class="fa-solid fa-chart-simple my-2"></i><span class="mx-1">Stats</span></div>
-                    <div><i class="fa-solid fa-signal my-2"></i><span class="mx-1">Signals</span></div>
+                    <div class="hover"><i class="fa-solid fa-house  my-2"></i><span class="mx-1">Home</span></div>
+                    <div class="hover"><i class="fa-solid fa-chart-simple my-2"></i><span class="mx-1">Stats</span>
+                    </div>
+                    <div class="hover"><i class="fa-solid fa-signal my-2"></i><span class="mx-1">Signals</span></div>
                 </div>
 
                 <div class="text-white d-lg-none">
@@ -135,19 +84,136 @@
 
             </nav>
 
-        </div>
+            <div class="main-cont col-11 col-lg-10 nopadding overflow-auto">
 
-        <div class="main-cont">
+                <div class="bool-bar w-100 bg-blue d-md-flex justify-content-lg-between">
 
-            <div class="bool-bar bg-blue">
+                    <div class="mx-3 py-3 flex-nowrap order-md-3"><span class="text-white mx-2">Nuovo
+                            Studente</span><button type="button" class="btn btn-outline-light">+</button>
+                    </div>
 
-                <div><span class="text-black">Nuovo Studente</span><button type="button"
-                        class="btn btn-outline-light">+</button></div>
+                    <div class="mx-3 order-md-1">
+                        <div>
+                            <div><span class="fs-3 text-white mx-2">Boolean</span><span
+                                    class="badge rounded-pill text-bg-primary">Piano
+                                    blaze</span>
+                            </div>
 
+                            <div class="d-lg-none text-white">
+                                <span class="badge rounded-pill text-bg-primary">3 app</span>
+                                <span>>></span>
+                                <span class="badge rounded-pill text-bg-primary">+</span>
+                            </div>
+
+                            <div class="d-none d-lg-block text-white flex-nowrap">
+                                <span class="badge rounded-pill text-bg-primary">3 app</span>
+                                <span>>></span>
+                                <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
+                                <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
+                                <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-4 text-white pb-3 order-md-2">
+                        <span>Studenti online negli ultimi 30 min</span>
+                        <h3>125</h3>
+                    </div>
+
+                </div>
+
+                <div class="card mx-2 my-2">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Data inizio</th>
+                                <th scope="col">Roi</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Classe 75</th>
+                                <td>15 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 76</th>
+                                <td>16 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 77</th>
+                                <td>17 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-warning">process</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 78</th>
+                                <td>18 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 79</th>
+                                <td>19 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 80</th>
+                                <td>20 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 81</th>
+                                <td>21 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Classe 82</th>
+                                <td>22 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
+                                        class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
-
         </div>
+
 
 
 

@@ -9,7 +9,7 @@
 }
 
 .bg-blue {
-    background-color: rgb(27, 114, 232);
+    background-color: rgb(130, 175, 238);
 }
 
 li {
@@ -18,6 +18,11 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .nav-bar {
@@ -43,7 +48,9 @@ nav {
     flex-wrap: wrap;
 }
 
-
+.hover:hover {
+    background-color: aqua;
+}
 
 .bar-search {
     flex-grow: 1;
@@ -59,6 +66,13 @@ nav {
 .bell img {
     width: 100%;
 }
+
+.ro a {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 3px;
+}
+
 
 
 
