@@ -78,6 +78,17 @@ nav {
     --bs-offcanvas-width: 100%;
 }
 
+tbody tr th::before {
+    content: "";
+    background-image: url('../img/class-avatar.jpg');
+    height: 30px;
+    aspect-ratio: 1;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 
 
 
