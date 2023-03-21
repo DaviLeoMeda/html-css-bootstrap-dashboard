@@ -74,6 +74,11 @@ nav {
     padding: 3px;
 }
 
+.offcanvas {
+    --bs-offcanvas-width: 100%;
+}
+
+
 
 
 
@@ -83,6 +88,10 @@ nav {
     .bell {
         width: 6rem;
         height: 2rem;
+    }
+
+    .offcanvas {
+        --bs-offcanvas-width: 35%;
     }
 
 }
