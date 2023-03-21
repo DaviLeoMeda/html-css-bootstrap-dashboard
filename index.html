@@ -88,9 +88,24 @@
 
                 <div class="bool-bar w-100 bg-blue d-md-flex justify-content-lg-between">
 
-                    <div class="mx-3 py-3 flex-nowrap order-md-3"><span class="text-white mx-2">Nuovo
-                            Studente</span><button type="button" class="btn btn-outline-light">+</button>
+                    <div class="mx-3 py-3 flex-nowrap order-md-3 text-white">
+                        <span>Nuovo Studente</span>
+                        <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
                     </div>
+
 
                     <div class="mx-3 order-md-1">
                         <div>
@@ -122,221 +137,243 @@
 
                 </div>
 
-                <div id="first-cards">
+                <div class="row justify-content-around">
+
+
+                    <div id="first-cards" class="col-12 col-xl-6">
 
 
 
-                    <div class="card mx-2 my-2">
-                        <div class="card-header">
-                            <h4>Prossime Classi</h4>
+                        <div class="card mx-1 my-2">
+                            <div class="card-header">
+                                <h4>Prossime Classi</h4>
+                            </div>
+
+                            <div class="card-body">
+
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="w-50" scope="col">Nome</th>
+                                            <th class="d-none d-md-block" scope="col">Data inizio</th>
+                                            <th class="d-none d-lg-block" scope="col">Roi</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="d-none d-md-block">15 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 76</th>
+                                            <td class="d-none d-md-block">16 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 77</th>
+                                            <td class="d-none d-md-block">17 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-warning">process</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 78</th>
+                                            <td class="d-none d-md-block">18 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 79</th>
+                                            <td class="d-none d-md-block">19 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 80</th>
+                                            <td class="d-none d-md-block">20 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 81</th>
+                                            <td class="d-none d-md-block">21 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 82</th>
+                                            <td class="d-none d-md-block">22 Feb 2021</td>
+                                            <td class="d-none d-lg-block">20%</td>
+                                            <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                            <td class="ro"><a class="mx-1" href="#"><i
+                                                        class="fa-solid fa-pen"></i></a><a class="mx-1" href="#"><i
+                                                        class="fa-regular fa-trash-can"></i></a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
                         </div>
 
-                        <div class="card-body">
+                        <div class="card mx-1 my-2">
 
-                            <table class="table align-middle">
-                                <thead>
-                                    <tr>
-                                        <th class="w-50" scope="col">Nome</th>
-                                        <th class="d-none d-md-block" scope="col">Data inizio</th>
-                                        <th class="d-none d-lg-block" scope="col">Roi</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Classe 75</th>
-                                        <td class="d-none d-md-block">15 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 76</th>
-                                        <td class="d-none d-md-block">16 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 77</th>
-                                        <td class="d-none d-md-block">17 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-warning">process</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 78</th>
-                                        <td class="d-none d-md-block">18 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 79</th>
-                                        <td class="d-none d-md-block">19 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 80</th>
-                                        <td class="d-none d-md-block">20 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 81</th>
-                                        <td class="d-none d-md-block">21 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 82</th>
-                                        <td class="d-none d-md-block">22 Feb 2021</td>
-                                        <td class="d-none d-lg-block">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="ro"><a class="mx-1" href="#"><i class="fa-solid fa-pen"></i></a><a
-                                                class="mx-1" href="#"><i class="fa-regular fa-trash-can"></i></a>
-                                        </td>
-                                    </tr>
+                            <div class="card-header">
+                                <h4 class="text-uppercase">f.a.q.</h4>
+                            </div>
 
-                                </tbody>
-                            </table>
+                            <div class="card-body">
 
-                        </div>
-
-
-                    </div>
-
-                    <div class="card mx-2 my-2">
-
-                        <div class="card-header">
-                            <h4 class="text-uppercase">f.a.q.</h4>
-                        </div>
-
-                        <div class="card-body">
-
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            first item's accordion body.</div>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                first item's accordion body.</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            second item's accordion body. Let's imagine this being filled with some
-                                            actual
-                                            content.</div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                second item's accordion body. Let's imagine this being filled with some
+                                                actual
+                                                content.</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            third item's accordion body. Nothing more exciting happening here in terms
-                                            of
-                                            content, but just filling up the space to make it look, at least at first
-                                            glance, a bit more representative of how this would look in a real-world
-                                            application.</div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                third item's accordion body. Nothing more exciting happening here in
+                                                terms
+                                                of
+                                                content, but just filling up the space to make it look, at least at
+                                                first
+                                                glance, a bit more representative of how this would look in a real-world
+                                                application.</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                </div>
+                    <div id="second-cards" class="col-12 col-xl-6">
 
-                <div id="second-cards">
+                        <div class="card mx-1 my-2">
 
-                    <div class="card">
+                            <div class="card-header">
+                                <h4>Todo</h4>
+                            </div>
 
-                        <div class="card-header">
-                            <h4>Todo</h4>
+                            <div class="card-body">
+
+                                <div class="card" style="width: 100%;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input type="checkbox"><span class="mx-2">Kickoff
+                                                nuove
+                                                classi</span></li>
+                                        <li class="list-group-item"><input type="checkbox"><span class="mx-2">Lezione su
+                                                Boostrap 5 in classe
+                                                #75</span></li>
+                                        <li class="list-group-item"><input type="checkbox"><span
+                                                class="mx-2">Controllare
+                                                GitHub Username
+                                                studenti</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="card-body">
-
-                            <div class="card" style="width: 100%;">
+                        <div>
+                            <div class="card mx-1 my-2" style="width: 100%;">
+                                <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista utenti attivi sulla piattaforma nell'ultimo mese</p>
+                                </div>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><input type="checkbox"><span class="mx-2">Kickoff nuove
-                                            classi</span></li>
-                                    <li class="list-group-item"><input type="checkbox"><span class="mx-2">Lezione su
-                                            Boostrap 5 in classe
-                                            #75</span></li>
-                                    <li class="list-group-item"><input type="checkbox"><span class="mx-2">Controllare
-                                            GitHub Username
-                                            studenti</span></li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <div class="card mx-2 my-2" style="width: 100%;">
-                            <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Utenti attivi</h5>
-                                <p class="card-text">Lista utenti attivi sulla piattaforma nell'ultimo mese</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Gennaio: 1200</li>
-                                <li class="list-group-item">Febbraio: 800</li>
-                                <li class="list-group-item">Marzo: 1500</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Visualizza report approfondito</a>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
+
 
 
             </div>
